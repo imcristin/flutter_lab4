@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'dart:math' as math;
 
 void main() {
   debugPaintSizeEnabled = false;
@@ -12,21 +11,21 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.white,
         body: SafeArea(
-          child: ImageRotate(),
+          child: ImageDrag(),
         ),
       ),
     );
   }
 }
 
-class ImageRotate extends StatefulWidget {
+class ImageDrag extends StatefulWidget {
   @override
-  _ImageRotateState createState() => _ImageRotateState();
+  _ImageDragState createState() => _ImageDragState();
 }
 
-class _ImageRotateState extends State<ImageRotate> {
+class _ImageDragState extends State<ImageDrag> {
   double _x = 0;
   double _y = 0;
 
@@ -49,7 +48,7 @@ class _ImageRotateState extends State<ImageRotate> {
             },
             child: Column(
               children: [
-                Image.network("https://i.imgur.com/B3gwETC.png"),
+                Image.asset("ceiti1.png"),
               ],
             ),
           ),
@@ -66,7 +65,7 @@ class _ImageRotateState extends State<ImageRotate> {
             },
             child: Column(
               children: [
-                Image.network("https://i.imgur.com/Vx5ryaB.png"),
+                Image.asset("ceiti2.png"),
               ],
             ),
           ),
