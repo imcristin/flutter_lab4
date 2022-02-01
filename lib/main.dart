@@ -48,7 +48,7 @@ class _ImageDragState extends State<ImageDrag> {
             },
             child: Column(
               children: [
-                Image.asset("ceiti1.png"),
+                Image.asset("assets/ceiti1.png"),
               ],
             ),
           ),
@@ -65,7 +65,7 @@ class _ImageDragState extends State<ImageDrag> {
             },
             child: Column(
               children: [
-                Image.asset("ceiti2.png"),
+                Image.asset("assets/ceiti2.png"),
               ],
             ),
           ),
